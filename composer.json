@@ -37,6 +37,7 @@
         "guzzlehttp/guzzle": "^6.3",
         "intervention/image": "dev-master",
         "invoiceninja/omnipay-collection": "^0.10.0",
+        "jakoch/phantomjs-installer": "2.1.1-p09",
         "jaybizzle/laravel-crawler-detect": "1.*",
         "jlapp/swaggervel": "master-dev",
         "jonnyw/php-phantomjs": "dev-fixes",
@@ -101,12 +102,14 @@
     },
     "scripts": {
         "post-install-cmd": [
+            "PhantomInstaller\\Installer::installPhantomJS",
             "rm bootstrap/cache/compiled.php || true",
             "php artisan view:clear",
             "php artisan clear-compiled",
             "php artisan optimize"
         ],
         "post-update-cmd": [
+            "PhantomInstaller\\Installer::installPhantomJS",
             "rm bootstrap/cache/compiled.php || true",
             "php artisan view:clear",
             "php artisan clear-compiled",
