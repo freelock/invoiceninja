@@ -2447,6 +2447,7 @@ $LANG = array(
     'currency_haitian_gourde' => 'Haitian Gourde',
     'currency_zambian_kwacha' => 'Zambian Kwacha',
     'currency_nepalese_rupee' => 'Nepalese Rupee',
+    'currency_cfp_franc' => 'CFP Franc',
 
     'review_app_help' => 'We hope you\'re enjoying using the app.<br/>If you\'d consider :link we\'d greatly appreciate it!',
     'writing_a_review' => 'writing a review',
@@ -2880,6 +2881,7 @@ $LANG = array(
     'guide' => 'Guide',
     'gateway_fee_item' => 'Gateway Fee Item',
     'gateway_fee_description' => 'Gateway Fee Surcharge',
+    'gateway_fee_discount_description' => 'Gateway Fee Discount',
     'show_payments' => 'Show Payments',
     'show_aging' => 'Show Aging',
     'reference' => 'Reference',
